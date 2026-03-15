@@ -359,8 +359,8 @@ export default function Home() {
               zIndex: 0,
             }} />
             <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-service-hero-VVxWjc86EK2UpkPFhBjQNc.webp"
-              alt="Premium curb-side trash bin service"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-hero-MkmWhetKdqt485vF7oVq8C.webp"
+              alt="Premium curb-side trash bin service with black, green, and blue bins"
               style={{
                 width: "100%",
                 height: "420px",
@@ -545,8 +545,8 @@ export default function Home() {
                 borderRadius: "2px",
               }} />
               <img
-                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-clean-bins-KzaQ6NfJQdSHdadfm4amaE.webp"
-                alt="Premium clean trash bins"
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-about-M5qjC2cPfsgRZ2jfZuyBiq.webp"
+                alt="Close-up of clean trash bins with black, green, and blue colors"
                 style={{
                   width: "100%",
                   height: "400px",
