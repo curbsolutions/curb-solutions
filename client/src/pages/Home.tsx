@@ -303,10 +303,10 @@ export default function Home() {
             </p>
 
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-              <a href="#contact" className="btn-gold" style={{ display: "inline-block", textDecoration: "none", borderRadius: "2px" }}>
+              <a href="#contact" className="btn-gold" style={{ display: "inline-block", textDecoration: "none", borderRadius: "2px" }} onClick={(e) => { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 Book a Wash
               </a>
-              <a href="#services" className="btn-emerald" style={{ display: "inline-block", textDecoration: "none", borderRadius: "2px" }}>
+              <a href="#services" className="btn-emerald" style={{ display: "inline-block", textDecoration: "none", borderRadius: "2px" }} onClick={(e) => { e.preventDefault(); document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 Our Services
               </a>
             </div>
@@ -408,7 +408,7 @@ export default function Home() {
                 icon: "🗑️",
                 title: "Standard Bin Wash",
                 desc: "Deep interior and exterior cleaning of your residential trash bins. Eliminates odors, bacteria, and built-up grime.",
-                features: ["Residue removal", "Eco-friendly deodorizer", "Odor elimination"],
+                features: ["Residue removal", "Professional-grade sanitization", "Odor elimination"],
               },
               {
                 icon: "🏡",
@@ -821,17 +821,17 @@ export default function Home() {
             {[
               {
                 name: "Sarah M.",
-                location: "Riverside Heights",
+                location: "Chino Hills",
                 text: "I never thought I'd be impressed by a trash bin cleaning service, but C.U.R.B. Solutions completely changed my mind. My bins look and smell brand new!",
               },
               {
                 name: "James T.",
-                location: "Oakwood Estates",
+                location: "Chino",
                 text: "The professionalism is unmatched. They arrived on time, worked efficiently, and the results were incredible. The loyalty program is a great bonus too.",
               },
               {
                 name: "Linda R.",
-                location: "Maple Grove",
+                location: "Upland",
                 text: "Something trashy has never been so classy — their tagline says it all. Highly recommend to anyone who values a clean, well-maintained home.",
               },
             ].map((review, i) => (
