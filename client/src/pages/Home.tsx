@@ -147,9 +147,9 @@ export default function Home() {
           {/* Social icons */}
           <div style={{ display: "flex", gap: "0.75rem" }}>
             {[
-              { icon: <InstagramIcon />, href: "https://www.instagram.com", label: "Instagram" },
+              { icon: <InstagramIcon />, href: "https://www.instagram.com/curbsolutions/", label: "Instagram" },
               { icon: <FacebookIcon />, href: "https://www.facebook.com", label: "Facebook" },
-              { icon: <YouTubeIcon />, href: "https://www.youtube.com", label: "YouTube" },
+              { icon: <YouTubeIcon />, href: "https://www.youtube.com/@C.U.R.B.Solutions", label: "YouTube" },
             ].map(({ icon, href, label }) => (
               <a
                 key={label}
@@ -413,8 +413,8 @@ export default function Home() {
               {
                 icon: "🏡",
                 title: "Monthly Subscription Program",
-                desc: "Complete curb-side cleaning for all bins on your property. Ideal for households with multiple waste containers.",
-                features: ["All bins covered", "Priority scheduling", "Monthly service plan"],
+                desc: "Complete curb-side cleaning for all bins on your property. Ideal for larger households and businesses",
+                features: ["All from the Standard Bin Wash", "Priority scheduling", "Monthly service plan"],
               },
             ].map((service, i) => (
               <div
