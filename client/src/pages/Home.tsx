@@ -5,7 +5,9 @@
  * Fonts: Playfair Display (headings) | Cormorant Garamond (taglines) | Source Sans 3 (body)
  */
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { trpc } from "@/lib/trpc";
+import { toast } from "sonner";
 
 // Social media SVG icons
 const InstagramIcon = () => (
@@ -52,7 +54,39 @@ const CheckIcon = () => (
 );
 
 export default function Home() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    phone: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const bookingMutation = trpc.booking.submit.useMutation();
   const fadeRefs = useRef<(HTMLElement | null)[]>([]);
+
+  const handleFormChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      const result = await bookingMutation.mutateAsync(formData);
+      if (result.success) {
+        toast.success(result.message);
+        setFormData({ firstName: "", lastName: "", phone: "", message: "" });
+      } else {
+        toast.error(result.message);
+      }
+    } catch (error) {
+      toast.error("Failed to submit booking request. Please try again.");
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -941,8 +975,8 @@ export default function Home() {
               textAlign: "left",
             }}>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem", marginBottom: "1rem" }}>
-                {["First Name", "Last Name"].map((label) => (
-                  <div key={label}>
+                {[{ label: "First Name", name: "firstName" }, { label: "Last Name", name: "lastName" }].map(({ label, name }) => (
+                  <div key={name}>
                     <label style={{
                       fontFamily: "'Source Sans 3', sans-serif",
                       fontSize: "0.72rem",
@@ -955,7 +989,10 @@ export default function Home() {
                     }}>{label}</label>
                     <input
                       type="text"
+                      name={name}
                       placeholder={label}
+                      value={formData[name as keyof typeof formData]}
+                      onChange={handleFormChange}
                       style={{
                         width: "100%",
                         padding: "0.75rem 1rem",
@@ -985,7 +1022,10 @@ export default function Home() {
                 }}>Phone Number</label>
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="(555) 000-0000"
+                  value={formData.phone}
+                  onChange={handleFormChange}
                   style={{
                     width: "100%",
                     padding: "0.75rem 1rem",
@@ -1012,8 +1052,11 @@ export default function Home() {
                   marginBottom: "0.5rem",
                 }}>Message</label>
                 <textarea
+                  name="message"
                   placeholder="Tell us about your service needs..."
                   rows={4}
+                  value={formData.message}
+                  onChange={handleFormChange}
                   style={{
                     width: "100%",
                     padding: "0.75rem 1rem",
@@ -1029,8 +1072,13 @@ export default function Home() {
                   }}
                 />
               </div>
-              <button className="btn-gold" style={{ width: "100%", borderRadius: "2px", cursor: "pointer" }}>
-                Request a Booking
+              <button 
+                className="btn-gold" 
+                style={{ width: "100%", borderRadius: "2px", cursor: isSubmitting ? "not-allowed" : "pointer", opacity: isSubmitting ? 0.7 : 1 }}
+                onClick={handleFormSubmit}
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Submitting..." : "Request a Booking"}
               </button>
             </div>
           </div>
