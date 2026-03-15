@@ -31,6 +31,12 @@ const YouTubeIcon = () => (
   </svg>
 );
 
+const TikTokIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+  </svg>
+);
+
 const TrashIcon = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
     <polyline points="3 6 5 6 21 6"/>
@@ -182,8 +188,9 @@ export default function Home() {
           <div style={{ display: "flex", gap: "0.75rem" }}>
             {[
               { icon: <InstagramIcon />, href: "https://www.instagram.com/curbsolutions/", label: "Instagram" },
-              { icon: <FacebookIcon />, href: "https://www.facebook.com", label: "Facebook" },
+              { icon: <FacebookIcon />, href: "https://www.facebook.com/people/CURB-Solutions/61579461505969/", label: "Facebook" },
               { icon: <YouTubeIcon />, href: "https://www.youtube.com/@C.U.R.B.Solutions", label: "YouTube" },
+              { icon: <TikTokIcon />, href: "https://www.tiktok.com/@curbsolutions", label: "TikTok" },
             ].map(({ icon, href, label }) => (
               <a
                 key={label}
