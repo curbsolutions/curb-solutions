@@ -408,17 +408,11 @@ export default function Home() {
                 icon: "🗑️",
                 title: "Standard Bin Wash",
                 desc: "Deep interior and exterior cleaning of your residential trash bins. Eliminates odors, bacteria, and built-up grime.",
-                features: ["Hot pressure wash", "Eco-friendly deodorizer", "Interior sanitization"],
-              },
-              {
-                icon: "♻️",
-                title: "Recycling Bin Wash",
-                desc: "Specialized cleaning for recycling bins to remove residue, labels, and contamination from recyclable materials.",
-                features: ["Residue removal", "Label-free finish", "Odor elimination"],
+                features: ["Residue removal", "Eco-friendly deodorizer", "Odor elimination"],
               },
               {
                 icon: "🏡",
-                title: "Full Property Package",
+                title: "Monthly Subscription Program",
                 desc: "Complete curb-side cleaning for all bins on your property. Ideal for households with multiple waste containers.",
                 features: ["All bins covered", "Priority scheduling", "Monthly service plan"],
               },
@@ -574,7 +568,7 @@ export default function Home() {
                 lineHeight: 1.85,
                 marginBottom: "2.5rem",
               }}>
-                Using professional-grade hot-water pressure washing and eco-safe sanitizing agents, we eliminate 99.9% of bacteria, neutralize odors, and restore your bins to a like-new condition — all without you lifting a finger.
+                Using professional-grade pressure washing and sanitizing agents, we eliminate 99.9% of bacteria, neutralize odors, and restore your bins to a like-new condition — all without you lifting a finger.
               </p>
 
               {/* Stats */}
