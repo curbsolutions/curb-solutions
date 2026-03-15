@@ -394,7 +394,7 @@ export default function Home() {
               fontSize: "1rem",
               lineHeight: 1.8,
             }}>
-              Every wash is performed with professional-grade equipment, eco-friendly solutions, and meticulous attention to detail.
+              Every wash is performed with professional-grade equipment and meticulous attention to detail.
             </p>
           </div>
 
