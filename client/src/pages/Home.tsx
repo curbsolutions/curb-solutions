@@ -284,7 +284,7 @@ export default function Home() {
         <div style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-hero-bg-7wtVrP7A2YSiXjqUxWetKJ.webp')",
+          backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-hero-bg_a0506adb.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           zIndex: 0,
@@ -385,7 +385,7 @@ export default function Home() {
             overflow: "hidden",
             boxShadow: "0 10px 40px rgba(0, 0, 0, 0.1)",
           }}>
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-hero-eTmNzKxL2YSiXjqUxWetKJ.webp" alt="Premium trash bins" style={{
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-hero_d90e93fa.png" alt="Premium trash bins" style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
@@ -582,7 +582,7 @@ export default function Home() {
             overflow: "hidden",
             boxShadow: "0 10px 40px rgba(0, 0, 0, 0.1)",
           }}>
-            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-about-eTmNzKxL2YSiXjqUxWetKJ.webp" alt="Service in action" style={{
+            <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-bins-about_660867c4.png" alt="Service in action" style={{
               width: "100%",
               height: "100%",
               objectFit: "cover",
@@ -873,7 +873,7 @@ export default function Home() {
         <div style={{
           position: "absolute",
           inset: 0,
-          backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-hero-bg-7wtVrP7A2YSiXjqUxWetKJ.webp')",
+          backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-hero-bg_a0506adb.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           zIndex: 0,
