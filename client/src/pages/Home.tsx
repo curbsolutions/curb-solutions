@@ -876,9 +876,9 @@ export default function Home() {
                 text: "Something trashy has never been so classy — their tagline says it all. Highly recommend to anyone who values a clean, well-maintained home.",
               },
               {
-                name: "Michael K.",
-                location: "Chino Hills",
-                text: "Their gutter cleaning service is exceptional! No more overflowing gutters when it rains. The team was thorough, professional, and my gutters have never looked better. Highly satisfied!",
+                name: "Robert T.",
+                location: "Upland",
+                text: "I was amazed at how clean my gutters became after C.U.R.B. Solutions finished. No more water pooling during rainstorms — everything drains perfectly now. The attention to detail was outstanding!",
               },
               {
                 name: "Jennifer W.",
