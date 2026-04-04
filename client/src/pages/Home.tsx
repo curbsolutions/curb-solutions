@@ -600,7 +600,7 @@ export default function Home() {
                 lineHeight: 1.85,
                 marginBottom: "1.5rem",
               }}>
-                C.U.R.B. Solutions was built on a simple belief: even the most overlooked parts of your home deserve the finest care. We treat every bin like a luxury item — because your home's curb appeal matters from top to bottom.
+                C.U.R.B. Solutions was built on a simple belief: even the most overlooked parts of your home deserve the finest care. We treat every bin and gutter like a luxury item — because your home's curb appeal matters from top to bottom.
               </p>
               <p style={{
                 fontFamily: "'Source Sans 3', sans-serif",
