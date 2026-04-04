@@ -1126,27 +1126,23 @@ export default function Home() {
             {[
               {
                 question: "How often should I schedule bin cleaning?",
-                answer: "[Your answer here]",
+                answer: "Depending on how dirty your bins usually get, we would say anything between one and three months you should schedule a cleaning.",
               },
               {
                 question: "What areas do you currently service?",
-                answer: "[Your answer here]",
-              },
-              {
-                question: "Are your cleaning solutions eco-friendly?",
-                answer: "[Your answer here]",
+                answer: "The Chino, Chino Hills, Pomona, Ontario, and Diamond Bar areas.",
               },
               {
                 question: "How long does a typical bin cleaning take?",
-                answer: "[Your answer here]",
+                answer: "Anywhere between 45 minutes to an hour and a half.",
               },
               {
                 question: "Do you offer same-day or emergency cleaning services?",
-                answer: "[Your answer here]",
+                answer: "We do offer same-day and emergency cleanings, but you will have to pay an extra $5 fee for the service.",
               },
               {
                 question: "What is included in your gutter cleaning service?",
-                answer: "[Your answer here]",
+                answer: "Our gutter cleaning service includes debris removal, thorough flushing to ensure proper water drainage, and downspout clearing to prevent blockages. We leave your gutters in pristine condition, ready to handle any rainfall.",
               },
             ].map((faq, i) => (
               <div
