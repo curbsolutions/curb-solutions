@@ -594,14 +594,25 @@ export default function Home() {
       {/* ── LOYALTY SECTION ── */}
       <section id="loyalty" style={{
         padding: "6rem 2rem",
-        background: "linear-gradient(135deg, #1B5E3B 0%, #143028 100%)",
         position: "relative",
+        overflow: "hidden",
       }}>
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310519663438830896/RwdpQnUHETTx3khai6RZzn/curb-hero-bg_a0506adb.jpg')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          zIndex: 0,
+        }} />
+        <div style={{ position: "absolute", inset: 0, background: "rgba(250, 248, 244, 0.88)", zIndex: 1 }} />
         <div style={{
           maxWidth: "900px",
           margin: "0 auto",
           textAlign: "center",
           marginBottom: "3rem",
+          position: "relative",
+          zIndex: 2,
         }}>
           <span style={{
             fontFamily: "'Source Sans 3', sans-serif",
@@ -631,6 +642,7 @@ export default function Home() {
           borderRadius: "2px",
           padding: "3rem 2rem",
           position: "relative",
+          zIndex: 2,
         }}>
           <div style={{
             position: "absolute",
