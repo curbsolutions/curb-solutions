@@ -876,11 +876,6 @@ export default function Home() {
                 text: "Something trashy has never been so classy — their tagline says it all. Highly recommend to anyone who values a clean, well-maintained home.",
               },
               {
-                name: "Robert T.",
-                location: "Upland",
-                text: "I was amazed at how clean my gutters became after C.U.R.B. Solutions finished. No more water pooling during rainstorms — everything drains perfectly now. The attention to detail was outstanding!",
-              },
-              {
                 name: "Jennifer W.",
                 location: "Chino Hills",
                 text: "Best gutter cleaning I've ever had! The team was efficient, thorough, and left no mess behind. My gutters are crystal clear and I can see the difference immediately. Absolutely worth it!",
@@ -1103,6 +1098,83 @@ export default function Home() {
                 {isSubmitting ? "Submitting..." : "Request a Booking"}
               </button>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── FAQ SECTION ── */}
+      <section style={{
+        background: "#FAF8F4",
+        padding: "5rem 2rem",
+      }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+            <h2 style={{
+              fontFamily: "'Playfair Display', serif",
+              fontSize: "2.5rem",
+              fontWeight: 700,
+              color: "#2C2C2C",
+              marginBottom: "1rem",
+            }}>Frequently Asked <span style={{ color: "#C8A951" }}>Questions</span></h2>
+            <div className="gold-divider" style={{ width: "80px", margin: "0 auto" }} />
+          </div>
+
+          <div style={{
+            display: "grid",
+            gap: "2rem",
+          }}>
+            {[
+              {
+                question: "How often should I schedule bin cleaning?",
+                answer: "[Your answer here]",
+              },
+              {
+                question: "What areas do you currently service?",
+                answer: "[Your answer here]",
+              },
+              {
+                question: "Are your cleaning solutions eco-friendly?",
+                answer: "[Your answer here]",
+              },
+              {
+                question: "How long does a typical bin cleaning take?",
+                answer: "[Your answer here]",
+              },
+              {
+                question: "Do you offer same-day or emergency cleaning services?",
+                answer: "[Your answer here]",
+              },
+              {
+                question: "What is included in your gutter cleaning service?",
+                answer: "[Your answer here]",
+              },
+            ].map((faq, i) => (
+              <div
+                key={i}
+                style={{
+                  background: "#ffffff",
+                  padding: "2rem",
+                  borderRadius: "2px",
+                  borderLeft: "4px solid #C8A951",
+                  boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
+                }}
+              >
+                <h3 style={{
+                  fontFamily: "'Playfair Display', serif",
+                  fontSize: "1.1rem",
+                  fontWeight: 600,
+                  color: "#1B5E3B",
+                  marginBottom: "0.75rem",
+                }}>{faq.question}</h3>
+                <p style={{
+                  fontFamily: "'Source Sans 3', sans-serif",
+                  fontSize: "0.95rem",
+                  color: "#4a4a4a",
+                  lineHeight: 1.6,
+                  margin: 0,
+                }}>{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
