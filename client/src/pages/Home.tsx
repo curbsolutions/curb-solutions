@@ -457,6 +457,12 @@ export default function Home() {
                 desc: "Complete curb-side cleaning for all bins on your property. Ideal for larger households and businesses",
                 features: ["All from the Standard Bin Wash", "Priority scheduling", "Monthly service plan"],
               },
+              {
+                icon: "🌧️",
+                title: "Gutter Cleaning",
+                desc: "Professional gutter maintenance to prevent water damage and keep your home protected. Debris removal and thorough flushing for optimal drainage.",
+                features: ["Debris removal", "Gutter flushing", "Downspout clearing"],
+              },
             ].map((service, i) => (
               <div
                 key={service.title}
@@ -874,6 +880,11 @@ export default function Home() {
                 name: "Linda R.",
                 location: "Upland",
                 text: "Something trashy has never been so classy — their tagline says it all. Highly recommend to anyone who values a clean, well-maintained home.",
+              },
+              {
+                name: "Michael K.",
+                location: "Chino Hills",
+                text: "Their gutter cleaning service is exceptional! No more overflowing gutters when it rains. The team was thorough, professional, and my gutters have never looked better. Highly satisfied!",
               },
             ].map((review, i) => (
               <div
