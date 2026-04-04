@@ -880,6 +880,16 @@ export default function Home() {
                 location: "Chino Hills",
                 text: "Their gutter cleaning service is exceptional! No more overflowing gutters when it rains. The team was thorough, professional, and my gutters have never looked better. Highly satisfied!",
               },
+              {
+                name: "Patricia N.",
+                location: "Upland",
+                text: "My gutters are spotless now! C.U.R.B. Solutions removed all the debris and buildup that had been sitting there for years. The water flows perfectly, and I'm so relieved knowing my home is protected from water damage.",
+              },
+              {
+                name: "David R.",
+                location: "Chino",
+                text: "What really impressed me was how friendly and courteous the team was. They explained everything they were doing, answered all my questions, and treated my home with respect. Great service, great people!",
+              },
             ].map((review, i) => (
               <div
                 key={review.name}
