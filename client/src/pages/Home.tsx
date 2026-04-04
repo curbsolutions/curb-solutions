@@ -881,9 +881,9 @@ export default function Home() {
                 text: "Their gutter cleaning service is exceptional! No more overflowing gutters when it rains. The team was thorough, professional, and my gutters have never looked better. Highly satisfied!",
               },
               {
-                name: "Patricia N.",
-                location: "Upland",
-                text: "My gutters are spotless now! C.U.R.B. Solutions removed all the debris and buildup that had been sitting there for years. The water flows perfectly, and I'm so relieved knowing my home is protected from water damage.",
+                name: "Jennifer W.",
+                location: "Chino Hills",
+                text: "Best gutter cleaning I've ever had! The team was efficient, thorough, and left no mess behind. My gutters are crystal clear and I can see the difference immediately. Absolutely worth it!",
               },
               {
                 name: "David R.",
