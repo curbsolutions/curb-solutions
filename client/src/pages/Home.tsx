@@ -452,12 +452,6 @@ export default function Home() {
                 features: ["Residue removal", "Professional-grade sanitization", "Odor elimination"],
               },
               {
-                icon: "🏡",
-                title: "Monthly Subscription Program",
-                desc: "Complete curb-side cleaning for all bins on your property. Ideal for larger households and businesses",
-                features: ["All from the Standard Bin Wash", "Priority scheduling", "Monthly service plan"],
-              },
-              {
                 icon: "🌧️",
                 title: "Gutter Cleaning",
                 desc: "Professional gutter maintenance to prevent water damage and keep your home protected. Debris removal and thorough flushing for optimal drainage.",
