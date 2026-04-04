@@ -340,7 +340,7 @@ export default function Home() {
               marginBottom: "2.5rem",
               maxWidth: "440px",
             }}>
-              We bring white-glove cleanliness to your curb. Professional trash bin washing that eliminates odors, bacteria, and grime — leaving your bins spotless and your home pristine.
+              We bring cleanliness to your curb. Professional trash bin and gutter washing that eliminates odors, bacteria, and grime; leaving your bins spotless and your home pristine.
             </p>
 
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
